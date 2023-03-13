@@ -2,8 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Science Podcast - Videos</title>
+    <title>Videos - Data Science Podcast</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -12,17 +11,44 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">Top Videos</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">About Us</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <h2>Top Data Science Videos</h2>
-      <ul>
-        <li><a href="https://www.youtube.com/watch?v=5NODkSxs5HQ">What is Data Science? - Edureka</a></li>
-        <li><a href="https://www.youtube.com/watch?v=0VjIjZpbvZ0">Data Science Full Course - Learn Data Science in 10 Hours - Edureka</a></li>
-        <li><a href="https://www.youtube.com/watch?v=1-CxMtTtWQA">How to Become a Data Scientist? - Edureka</a></li>
-      </ul>
+      <h2>Videos</h2>
+      <div class="video-container">
+        <div class="video-gallery">
+          <div class="video-item active">
+            <video controls>
+              <source src="video1.mp4" type="video/mp4">
+            </video>
+            <h3>Video 1</h3>
+            <p>Description of video 1</p>
+          </div>
+          <div class="video-item">
+            <video controls>
+              <source src="video2.mp4" type="video/mp4">
+            </video>
+            <h3>Video 2</h3>
+            <p>Description of video 2</p>
+          </div>
+          <div class="video-item">
+            <video controls>
+              <source src="video3.mp4" type="video/mp4">
+            </video>
+            <h3>Video 3</h3>
+            <p>Description of video 3</p>
+          </div>
+        </div>
+        <div class="video-scroll">
+          <button class="video-scroll-left">&lt;</button>
+          <button class="video-scroll-right">&gt;</button>
+        </div>
+      </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
